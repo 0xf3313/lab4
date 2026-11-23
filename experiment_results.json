@@ -1,0 +1,108 @@
+{
+  "model_name": "Random Forest (150 деревьев, min_samples_leaf=4)",
+  "random_seed": 42,
+  "test_size": 0.2,
+  "selection_criterion": "mean ROC-AUC, stratified 5-fold CV on training data",
+  "selected_model": "Random Forest",
+  "best_voting_model": "Soft Voting RF + GB3 (2:1)",
+  "metrics": {
+    "roc_auc": 0.8366666666666667,
+    "accuracy": 0.79,
+    "precision": 0.8024691358024691,
+    "recall": 0.9285714285714286,
+    "f1": 0.8609271523178808
+  },
+  "validation": {
+    "Random Forest": {
+      "mean_roc_auc": 0.7763020833333333,
+      "std_roc_auc": 0.03942199233727102
+    },
+    "Extra Trees": {
+      "mean_roc_auc": 0.7723958333333332,
+      "std_roc_auc": 0.037634690557915074
+    },
+    "Gradient Boosting depth 1": {
+      "mean_roc_auc": 0.7533854166666666,
+      "std_roc_auc": 0.04528137278517382
+    },
+    "Gradient Boosting depth 2": {
+      "mean_roc_auc": 0.759375,
+      "std_roc_auc": 0.03532254893527347
+    },
+    "Gradient Boosting depth 3": {
+      "mean_roc_auc": 0.7646205357142858,
+      "std_roc_auc": 0.042203899978539045
+    },
+    "Hist Gradient Boosting": {
+      "mean_roc_auc": 0.764360119047619,
+      "std_roc_auc": 0.0248305758168028
+    },
+    "Soft Voting RF + GB2 (1:1)": {
+      "mean_roc_auc": 0.7723586309523809,
+      "std_roc_auc": 0.03964583573510849
+    },
+    "Soft Voting RF + GB3 (1:1)": {
+      "mean_roc_auc": 0.775,
+      "std_roc_auc": 0.04129474340399597
+    },
+    "Soft Voting RF + GB2 (2:1)": {
+      "mean_roc_auc": 0.7746279761904762,
+      "std_roc_auc": 0.03981256212906799
+    },
+    "Soft Voting RF + GB3 (2:1)": {
+      "mean_roc_auc": 0.7754464285714285,
+      "std_roc_auc": 0.041579781595060324
+    }
+  },
+  "test_results": {
+    "Random Forest": {
+      "roc_auc": 0.8366666666666667,
+      "accuracy": 0.79,
+      "precision": 0.8024691358024691,
+      "recall": 0.9285714285714286,
+      "f1": 0.8609271523178808
+    },
+    "Extra Trees": {
+      "roc_auc": 0.8242857142857143,
+      "accuracy": 0.765,
+      "precision": 0.7719298245614035,
+      "recall": 0.9428571428571428,
+      "f1": 0.8488745980707395
+    },
+    "Gradient Boosting depth 1": {
+      "roc_auc": 0.8025,
+      "accuracy": 0.765,
+      "precision": 0.7657142857142857,
+      "recall": 0.9571428571428572,
+      "f1": 0.8507936507936508
+    },
+    "Gradient Boosting depth 2": {
+      "roc_auc": 0.8329761904761904,
+      "accuracy": 0.78,
+      "precision": 0.7962962962962963,
+      "recall": 0.9214285714285714,
+      "f1": 0.8543046357615894
+    },
+    "Gradient Boosting depth 3": {
+      "roc_auc": 0.8289285714285713,
+      "accuracy": 0.79,
+      "precision": 0.8181818181818182,
+      "recall": 0.9,
+      "f1": 0.8571428571428571
+    },
+    "Hist Gradient Boosting": {
+      "roc_auc": 0.8216666666666665,
+      "accuracy": 0.805,
+      "precision": 0.8258064516129032,
+      "recall": 0.9142857142857143,
+      "f1": 0.8677966101694915
+    },
+    "Soft Voting RF + GB3 (2:1)": {
+      "roc_auc": 0.8388095238095238,
+      "accuracy": 0.795,
+      "precision": 0.8113207547169812,
+      "recall": 0.9214285714285714,
+      "f1": 0.862876254180602
+    }
+  }
+}
